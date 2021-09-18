@@ -133,5 +133,8 @@
 
 
     ?>
+    <footer>
+        Desenvolvido por: Daniel Mesquita
+    </footer>
 </body>
 </html>
