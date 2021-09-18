@@ -1,7 +1,7 @@
 <?php
 
 class Aluno
-{
+{ 
     protected $nome;
     protected $ra;
     protected $nota1;
@@ -75,19 +75,17 @@ class Aluno
         array_push($arrayMedia, $this->nota3);
         array_push($arrayMedia, $this->nota4);
         $sizeArray = sizeof($arrayMedia);
-        return $this->nota1 + $this->nota2 + $this->nota3 + $this->nota4/$sizeArray;
+        $total = $this->nota1 + $this->nota2 + $this->nota3 + $this->nota4;
+        return $total/$sizeArray;
     }
     // recebe indice para realização do for e população do array contido em Turma
-    public function armazenaAluno($i)
-    {
+    public function armazenaAluno($aluno)
+    {    
        $registroAlunos = [];
-       $aluno = new Aluno($this->nome, $this->ra, $this->nota1, $this->nota2, $this->nota3, $this->nota4);
-    
        array_push($registroAlunos, $aluno);
-       
-       return $registroAlunos[$i];
-        
+  
     }
+   
 }
 
 ?>
