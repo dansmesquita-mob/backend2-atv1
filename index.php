@@ -134,7 +134,9 @@
 
     ?>
     <footer>
-        Desenvolvido por: Daniel Mesquita
+        <p>
+            Desenvolvido por: Daniel Mesquita
+        </p>
     </footer>
 </body>
 </html>
